@@ -1,0 +1,343 @@
+//colors
+$nav: #ffbf00;
+$footer: #ffbf00;
+$bg: #ffcf40;
+$bgSection: #171717;
+//fonts
+$roboto: 'Roboto', sans-serif;
+$lato: 'Lato', sans-serif;
+$txt: #171717;
+
+
+body {
+    margin: 0 auto;
+    background-color: #171717;
+    color: $txt;
+    font-family: $roboto;
+    width: 100%;
+}
+li, a {
+    text-decoration: none;
+}
+.nav__links, ul {
+    list-style: none;
+}
+.nav__links, li, ul {
+    display: inline-block;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 25px;
+    background-color: $nav;
+    color: $txt;
+    padding: 25px 10px;
+}
+.header__img {
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.nav__links--Home  {
+    border: 2px solid #171717;
+    background-color: $bg;
+    color: #fff;
+    padding: 10px;
+}
+.nav__links--Info {
+    border: 2px solid #171717;
+    background-color: $bg;
+    color: #fff;
+    padding: 10px;
+}
+.nav__links--Contact {
+    border: 2px solid #171717;
+    background-color: $bg;
+    color: #fff;
+    padding: 10px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+.slider__imgs {
+    margin-top: 50px;
+    width: 800px;
+    height: 350px;
+    cursor: pointer;
+}
+.slider__txt {
+    position: absolute;
+    background-color: $bg;
+    color: $txt;
+    font-size: 25px;
+    font-family: $lato;
+}
+.container {
+    display: grid;
+    margin-top: 130px;
+    grid-template-columns: 100fr 100fr 100fr;
+    grid-gap: 30px;
+    text-align: center;
+    &__img--chains {
+        justify-self: start;
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+    }
+    &__img--earrings {
+        justify-self: center;
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+    }
+    &__img--pendants {
+        justify-self: end;
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+    }
+    &__img--necklaces {
+        justify-self: start;
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+    }
+    &__img--ringsN {
+        justify-self: center;
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+    }
+    &__img--ringsC {
+        justify-self: end;
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+    }
+    &__text {
+        color: #fff;
+        font-size: 20px;
+        font-family: $lato;
+    }
+    &__links {
+        background-color: $nav;
+        padding: 2.5px;
+        color: $txt;
+    }
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.articles {
+    background-color: #fff;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    color: $txt;
+    font-size: 25px;
+    font-family: $roboto;
+    p {
+        margin-top: 50px;
+    }
+}
+.partner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 25px;
+    font-family: $lato;
+    color: #fff;
+}
+.partners {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    &__koliber {
+        border: 2px solid $bg;
+        border-radius: 20px;
+    }
+    &__auvesta {
+        margin-left: 50px;
+    }
+}
+footer {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 200px;
+    background-color: $footer;
+}
+// footer, li, a {
+//     display: inline-block;
+//     list-style: none;
+//     text-decoration: none;
+// }
+.footer_Fp {
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: $bg
+}
+.footer_Mail {
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: $bg
+}
+.footer_Number {
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: $bg
+}
+.footer_Creator {
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: $bg
+}
+//RWD
+@media (max-width: 640px) {
+    body {
+        font-size: 15px;
+    }
+    .nav__links--Home  {
+        padding: 5px;
+    }
+    .nav__links--Info {
+        padding: 5px;
+    }
+    .nav__links--Contact {
+        padding: 5px;
+    }
+    .slider__imgs {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 15px;
+    }
+    .nav__links--Home  {
+        padding: 5px;
+    }
+    .nav__links--Info {
+        padding: 5px;
+    }
+    .nav__links--Contact {
+        padding: 5px;
+    }
+    .slider__imgs {
+        width: 300px;
+        height: 300px;
+    }
+    .container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-basis: 200px;
+        &__chains {
+            margin-top: 100px;
+            justify-self: start;
+            // width: 300px;
+            // height: 300px;
+            cursor: pointer;
+            p {
+                background-color: $bg;
+                color: $txt;
+                font-size: 20px;
+                font-family: $lato;
+            }
+        }
+        &__earrings {
+            margin-top: 100px;
+            justify-self: center;
+            // width: 300px;
+            // height: 300px;
+            cursor: pointer;
+            p {
+                background-color: $bg;
+                color: $txt;
+                font-size: 20px;
+                font-family: $lato;
+            }
+        }
+        &__pendants {
+            margin-top: 100px;
+            justify-self: end;
+            cursor: pointer;
+            p {
+                background-color: $bg;
+                color: $txt;
+                font-size: 20px;
+                font-family: $lato;
+            }
+        }
+        &__necklaces {
+            margin-top: 100px;
+            justify-self: start;
+            cursor: pointer;
+            p {
+                background-color: $bg;
+                color: $txt;
+                font-size: 20px;
+                font-family: $lato;
+            }
+        }
+        &__ringsN {
+            margin-top: 100px;
+            justify-self: center;
+            cursor: pointer;
+            p {
+                background-color: $bg;
+                color: $txt;
+                font-size: 20px;
+                font-family: $lato;
+            }
+        }
+        &__ringsC {
+            margin-top: 100px;
+            justify-self: end;
+            cursor: pointer;
+            p {
+                background-color: $bg;
+                color: $txt;
+                font-size: 20px;
+                font-family: $lato;
+            }
+        }
+    }
+    .partner {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 70px;
+        font-size: 30px;
+        font-family: $lato;
+        color: #fff;
+    }
+    .partners {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        &__auvesta {
+            margin-top: 50px;
+            margin-right: 30px;
+        }
+    }
+}
