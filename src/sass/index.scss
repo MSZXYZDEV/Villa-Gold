@@ -176,35 +176,19 @@ footer {
     height: 100px;
     margin-top: 200px;
     background-color: $footer;
+    color: #171717;
 }
-// footer, li, a {
-//     display: inline-block;
-//     list-style: none;
-//     text-decoration: none;
-// }
-.footer_Fp {
-    color: #fff;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: $bg
+
+.contact, .Explore, .Creator {
+    list-style: none;
+    text-decoration: none;
 }
-.footer_Mail {
+.contacttext, .exploretext, .createdtext {
+    text-align: center;
     color: #fff;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: $bg
 }
-.footer_Number {
-    color: #fff;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: $bg
-}
-.footer_Creator {
-    color: #fff;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: $bg
+.fp, .mail, .number, .github, .Home, .Info, .Contact {
+    color: #171717;
 }
 //RWD
 @media (max-width: 640px) {
@@ -253,8 +237,6 @@ footer {
         &__chains {
             margin-top: 100px;
             justify-self: start;
-            // width: 300px;
-            // height: 300px;
             cursor: pointer;
             p {
                 background-color: $bg;
@@ -266,8 +248,6 @@ footer {
         &__earrings {
             margin-top: 100px;
             justify-self: center;
-            // width: 300px;
-            // height: 300px;
             cursor: pointer;
             p {
                 background-color: $bg;
