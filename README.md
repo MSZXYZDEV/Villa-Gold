@@ -23,3 +23,7 @@ $ cd ../Villa-Gold
 $ npm install or npm i
 $ npm run prod
 ```
+
+## If you dont clone and install project look at this link:
+
+<p>Click me<a href="https://mszxyzdev.github.io/Villa-Gold/build/index.html"></p>
